@@ -68,3 +68,14 @@
 硅锭、晶圆、晶片、芯片
 
 良率，yield
+
+响应时间/执行时间，execution
+
+吞吐率/带宽，band-width
+
+挂钟时间，wall clock time/响应时间，response time/运行时间，elapsed time
+
+CPU执行时间，CPU execution time/CPU时间
+
+* 用户CPU时间，user CPU time
+* 系统CPU时间，system CPU time
