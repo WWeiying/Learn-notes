@@ -5,10 +5,10 @@
 |                                                              |
 | ------------------------------------------------------------ |
 | [C Primer Plus（第6版）中文版 (（美）史蒂芬·普拉达（Stephen Prata）[著], 姜佑[译]) (z-lib.org).pdf](F:\电子书\C Primer Plus（第6版）中文版 (（美）史蒂芬·普拉达（Stephen Prata）[著], 姜佑[译]) (z-lib.org).pdf) |
-| [C Primer Plus（第6版）中文版 ([美]史蒂芬·普拉达（Stephen Prata）) (z-lib.org).epub](F:\电子书\C Primer Plus（第6版）中文版 ([美]史蒂芬·普拉达（Stephen Prata）) (z-lib.org).epub) |
+| [C Primer Plus（第6版）中文版 ([美]史蒂芬·普拉达（Stephen Prata）) (z-lib.org).epub](F:\电子书\C Primer Plus.epub) |
 | [C Primer Plus, 6th Edition (Stephen Prata) (z-lib.org).pdf](F:\电子书\C Primer Plus, 6th Edition (Stephen Prata) (z-lib.org).pdf) |
 | [C++ Primer Plus（第6版）中文版 (Stephen Prata) (z-lib.org).epub](F:\电子书\C++ Primer Plus（第6版）中文版 (Stephen Prata) (z-lib.org).epub) |
-| [C++ Primer Plus (Stephen Prata) (z-lib.org).pdf](F:\电子书\C++ Primer Plus (Stephen Prata) (z-lib.org).pdf)          |
+| [C++ Primer Plus (Stephen Prata) (z-lib.org).pdf](F:\电子书\C++ Primer Plus (Stephen Prata) (z-lib.org).pdf) |
 |                                                              |
 |                                                              |
 |                                                              |

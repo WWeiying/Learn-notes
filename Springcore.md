@@ -143,21 +143,58 @@ vim：
 * R变成替换模式
 * 光标移动，^行头，$行尾，w下一个词的词头，e下一个词的词尾，gg、shift+h（H）、1+G文档的开头，G、L文档末尾、行数+G跳到指定行头、
 
-命令模式
+命令模式：或者/
 
 * :w保存
-* ：set nu 显示行号，:nonu不显示行号
+* ：set nu 显示行号，:set nonu不显示行号
 * :q退出
+* 加 ! 强制执行
+* /查找+要查找的字符串，n向下找，N向上找
+* ：noh取消高亮
+* 替换：s/ old/new，替换当前查找到的第一个匹配到的词
+* 替换：s/ old/new/g，当前行替换
+* 替换：%s/ old/new，替换所有行的第一个
+* 替换：%s/ old/new/g，替换所有行的所有
 
 编辑模式i（插入模式）：
 
+* i/I
+* a/A
+* o/O
 
+ ping+ip用来检测两台机器之间是否联通。
 
+ping www.baidu.com
 
+主机IP：Windows查IP：ipconfig
 
+虚拟机IP：linux查IP：ifconfig
 
+复制：CTRL+shift+c
 
+192.168 C类地址
 
+前三个一样在一个局域网内。
+
+DHCP动态分配IP
+
+PC和VM是平等的关系。
+
+NAT网络地址转换，局域网里虚拟出的局域网。
+
+Vmnet8：主机访问虚拟机。
+
+主机名hostname vim /etc/hostname 重启才有效
+
+hostnamectl set-hostname spark10 实时生效
+
+有一个通讯录：hosts文件（Windows/linux都有） vim /etc/hosts
+
+域名劫持 修改hosts文件
+
+基于ssh远程协议的远程登陆。
+
+VNC远程登陆桌面版。
 
 
 
