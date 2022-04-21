@@ -196,19 +196,101 @@ hostnamectl set-hostname spark10 实时生效
 
 VNC远程登陆桌面版。
 
+ls /usr/sbin/ |grep service
 
+进程process：计算机中正在执行的程序或命令，正在运行的实体。分配一个唯一的PID识别码。
 
+持续存在的进程叫服务service。所有的系统服务都是后台进程。守护进程daemgn
 
+（centos6）/etc/init.d	绿色的是可执行的脚本
 
+（centos7）systemctl 操作命令+服务 /usr/lib/systemd .service服务	.target一组服务
 
+窗口化配置界面setup，有*的是开机自启动，运行级别越高功能越丰富。可以从级别1安全模式修改密码。NFS网络文件系统。常用级别3和5。
 
+ctrl+alt+f3进入运行级别3
 
+防火墙iptables/firewalld
 
+systemd stop firewalls
 
+shutdown一分钟的关机操作
 
+shutdown -c取消关机
 
+shutdown 3 3分钟后关机
 
+shutdown 15:38
 
+shutdown now立刻关机
+
+shell
+
+bin/sh整个shell命令的入口
+
+unix里的Bourne shell
+
+linux的Bourne  Again shell(Bash)
+
+dash、bash都是shell工具
+
+centos7默认的shell是bash
+
+ls -l /bin/ |grep sh
+
+每一行显示详细信息，有关sh
+
+man帮助命令manual手册
+
+空格是翻页，f是下翻页，b是上翻页，q退出
+
+cd是内置命令 exit，是基础功能的命令
+
+help获得内置的命令帮助信息
+
+type看命令是内置还是外部命令。
+
+history是命令历史命令
+
+man -f 内置命令
+
+P，Posix标准
+
+man man查看man
+
+ls - -help外部命令
+
+shell快捷键
+
+* ctrl+c终止
+* ctrl+l，clear清屏
+
+* reset重置
+* tab快速补全
+
+pwd打印工作目录绝对路径,内置命令
+
+cd切换当前路径
+
+cd ../返回当前目录的上一层
+
+cd +名字
+
+cd - 上一次所在的位置
+
+cd 回到用户主文件夹
+
+su 切换用户
+
+ls列举出内容
+
+ls -a所有内容显示（..上级菜单，.当前目录，.开头，隐藏的文件，.bahsrc当前用户的重要的配置文件（环境变量、别名））
+
+ls -l类型权限等信息显示出来，开头d表示文件夹，-表示一般的文件
+
+ll是ls -l的别名
+
+ls -al隐藏文件详细信息也显示
 
 
 
