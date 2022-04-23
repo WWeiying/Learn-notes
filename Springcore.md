@@ -292,6 +292,150 @@ ll是ls -l的别名
 
 ls -al隐藏文件详细信息也显示
 
+mkdir a相对目录
+
+mkdir /a根目录
+
+ls /显示根目录
+
+mkdir d d/e d/e/f
+
+mkdir d c
+
+mkdir -p d/g/f如果父目录不存在，也创建出来
+
+rmdir d/r/f d/r d/
+
+rmdir -p g/h/i
+
+touch创建新文件
+
+cp -r source dest
+
+\cp不提示直接覆盖
+
+\表示直接使用Linux的原生命令
+
+cp 是cp -i的别名
+
+alias查看别名
+
+rm 默认删除文件的命令
+
+rmdir删除文件夹或者rm -rf a删库跑路rm -rf /*
+
+rm -f ./*删除当前目录的所有
+
+mv移动或重命名或移动重命名
+
+cat查看文件内容 cat -n显示行号
+
+more按页显示
+
+less分屏显示文本内容，按=显示信息，/向下搜索关键字
+
+echo输出内容到控制台
+
+echo +内容
+
+echo +“内容”
+
+echo -e “hello\nworld”支持转义字符
+
+   >输出重定向
+
+ll >info
+
+cat info
+
+echo -e “hello\nworld” >>info追加
+
+echo $显示系统环境变量
+
+head显示文件头部内容
+
+tail输出文件尾部内容
+
+tail -f 文件 实时追踪文档的所有更新
+
+ctrl+s暂停 ctrl+q继续
+
+ls -i info显示出索引号index，vim修改后索引号变化
+
+ln软链接/符号链接，相当于快捷方式
+
+ls -s 原文件/目录 软链接
+
+ln -s /root/info myinfo文件类型是l
+
+pwd -P显示真正的物理路径
+
+cd -P 软连接目录
+
+ln 文件 链接 不加-s是硬链接
+
+inode保存了文件的metadata的元信息，文件有一个链接数
+
+history查看执行过的命令 history 10 
+
+!1156
+
+history -c清空命令历史
+
+date +%s从UTC标准时间1971开始的秒数
+
+date +%S秒
+
+data -s “”设置时间
+
+ntpdate联网同步时间
+
+cal查看日历
+
+cal -3前后共三个月
+
+cal -m周一在前
+
+cal 2022
+
+cal -y本年的日历
+
+linux多用户多任务分时操作系统，不同用户不同身份
+
+useradd
+
+useradd -g分组
+
+普通用户在/home下
+
+useradd -d 用户目录 用户名
+
+password 用户名   设置密码
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
