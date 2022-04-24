@@ -22,7 +22,7 @@ https://github.com/openhwgroup/cv32e40p
 
 图形化界面模式：design_vision
 
-## Linux
+# Linux
 
 centos：包管理工具rpm,yum，界面简洁，性能强大
 
@@ -412,7 +412,137 @@ useradd -d 用户目录 用户名
 
 password 用户名   设置密码
 
+id tony查看用户的信息，组信息
 
+cat /etc/passwd查看所有用户
+
+su 用户名 切换用户switch user
+
+who am i  whoami查看当前用户，有空格查看最原始的用户，没有空格查看当前会话的用户。
+
+sudo给普通用户暂时的超级管理员成分
+
+vim /etc/sudoers临时能获得管理权的用户名单
+
+userdel 用户 删除用户
+
+userdel -r 用户 删除用户及其主目录
+
+cat /etc/group
+
+新建用户默认在同名组
+
+groupadd 组名
+
+usermod -g 组名 用户
+
+groupmod -n 组名 组名 修改组名
+
+groupdel 组名 删除组
+
+wheel是管理员组，%组名 设置全组管理员
+
+ll ls -l显示权限、文件类型
+
+创建者的权限user，组里的同组成员的权限group，其他的用户other
+
+u,g,o
+
+w不代表可以删除文件，删除文件需要有该文件所属目录的w权限。
+
+ls -al
+
+可执行文件绿色表示
+
+<img src="F:/%E5%AD%A6%E4%B9%A0/Learn-notes/image/image-20220424103659904.png" alt="image-20220424103659904" style="zoom:33%;" />
+
+
+
+其实就是二进制码的十进制表示
+
+chmod 777
+
+chmod 644
+
+chmod -R 777文件夹里的文件也修改
+
+chown 属主 文件
+
+chgrp 属组 文件
+
+```shell
+groupadd bigdata
+groupadd testing
+useradd -g bigdata xiaoming#添加到已有组，默认是同用户名组
+id xiaoming
+su xiaoming
+cd ~
+vim important_code
+exit#退回到root用户
+su xiaoliang
+cd ~
+exit
+chmod g+x xiaoming
+usermod -g bigdata xiaolan
+```
+
+find 文件目录 -name info
+
+find /root -name “.cfg”
+
+ls -lh
+
+find /root -size +10m
+
+locate在数据库里查找
+
+uodatedb更新数据库
+
+locate tmp速度比较快
+
+which ls定位命令
+
+which locate
+
+which which
+
+whereis locate查找位置
+
+grep过滤查找，在文件内容里查找
+
+grep -n boot 文件
+
+| 管道符，前面处理结果传递给后面的指令
+
+wc word count 单词词频的统计 多少行、多少个单词
+
+wc info
+
+grep -n boot 文件 | wc
+
+gzip 文件名称
+
+gunzip 文件名
+
+zip 文件名
+
+unzip 文件名
+
+ tar打包
+
+tar -zcvf xxx.tar.gz 
+
+tree ./
+
+ls -lh
+
+du磁盘占用情况
+
+du -ah
+
+df -h
+
+free -h查看内存
 
 
 
@@ -444,7 +574,7 @@ password 用户名   设置密码
 
 Bash,Bourne Again Shell
 
-## 技能树
+# 技能树
 
 ### 语言
 
@@ -505,13 +635,23 @@ Bash,Bourne Again Shell
 * 前端设计
   * RTL IP设计 从算法协议到RTL coding的能力
   * Soc设计集成/验证 总线、功耗、系统架构能力
+  
 * 验证
   * FPGA原型验证 HAPS
   * UVM验证 SV/UVM主流验证方法学
   * EMU验证 zebu/帕拉丁
+  
 * 综合
+
 * STA （Static Timing Analysis，静态时序分析）
+
 * DFT（Design Fortest，可测性设计）
   * bist/Scan design/JTAG/ATPG
+  
 * 后端
   * 物理验证/布局布线/静态时序分析/等价性检查/功耗分析
+  
+  * 
+  
+
+# 会议记录
