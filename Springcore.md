@@ -14,13 +14,7 @@ https://github.com/openhwgroup/cv32e40p
 
 [OpenHW Group CV32E40P User Manual — CORE-V CV32E40P User Manual documentation](https://docs.openhwgroup.org/projects/cv32e40p-user-manual/)
 
-## DC
 
-逻辑综合：RTL代码转换成工艺相关的门级网表
-
-命令行模式：dc_shell
-
-图形化界面模式：design_vision
 
 # Linux
 
@@ -544,7 +538,45 @@ df -h
 
 free -h查看内存
 
+lsblk
 
+IDE硬盘——hda
+
+SATA硬盘——sda
+
+SCSI硬盘（服务器用）——sda
+
+lsblk -f 还会有文件类型、UUID
+
+mount挂载
+
+umount卸载
+
+fdisk
+
+mkfs创建文件系统
+
+ps显示当前用户和中断的进程
+
+加-的选项是UNIX风格
+
+不加-的选项是BSD风格
+
+ps aux | less
+
+VSZ资源占用的虚拟内存
+
+RSS占用的物理内存
+
+TTY当前使用的终端
+
+图形化终端-桌面
+
+STAT进程状态
+
+kill PID
+
+killall
 
 
 
@@ -573,6 +605,89 @@ free -h查看内存
 ## Shell
 
 Bash,Bourne Again Shell
+
+
+
+
+
+# 数字IC
+
+设计流程：
+
+* 确定项目需求，指定芯片具体指标：物理指标，性能功耗，功能指标
+* 系统级设计
+* 前端设计
+* 后端设计
+
+基于Standcell的ASIC设计流程
+
+RTL-逻辑综合-Netlist（门级网表）-PR（place and route）-版图layout（PD）
+
+Design verification功能验证
+
+有限状态机
+
+
+
+
+
+
+
+### Verilog HDL
+
+算法级-RTL级-门级-开关级
+
+并行性
+
+stdcell标准单元库
+
+行为级描述-always、initial
+
+数据流描述-assign
+
+结构级描述
+
+模块module、时延
+
+always assign是可综合的语法
+
+Z在真实芯片里有，X没有
+
+always只能对reg赋值
+
+wire用assign赋值
+
+芯片内部一般不出现inout定义
+
+R2N N2G
+
+提供激励的信号reg，便于在initial/always中进行赋值。
+
+收集激励的信号reg or wire
+
+vsim &同时释放命令行
+
+
+
+VCS
+
+ctrl+p自动补全
+
+
+
+
+
+
+
+
+
+## DC
+
+逻辑综合：RTL代码转换成工艺相关的门级网表
+
+命令行模式：dc_shell
+
+图形化界面模式：design_vision
 
 # 技能树
 
@@ -635,23 +750,16 @@ Bash,Bourne Again Shell
 * 前端设计
   * RTL IP设计 从算法协议到RTL coding的能力
   * Soc设计集成/验证 总线、功耗、系统架构能力
-  
 * 验证
   * FPGA原型验证 HAPS
   * UVM验证 SV/UVM主流验证方法学
   * EMU验证 zebu/帕拉丁
-  
 * 综合
-
 * STA （Static Timing Analysis，静态时序分析）
-
 * DFT（Design Fortest，可测性设计）
   * bist/Scan design/JTAG/ATPG
-  
 * 后端
   * 物理验证/布局布线/静态时序分析/等价性检查/功耗分析
-  
-  * 
   
 
 # 会议记录
